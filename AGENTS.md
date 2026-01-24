@@ -1,73 +1,56 @@
 # PROJECT KNOWLEDGE BASE
 
-**Generated:** 2026-01-24 12:42:41
-**Commit:** 4f24c9d
-**Branch:** main
-
 ## OVERVIEW
 
-Nx-based Angular monorepo with SSR support using Analog.js and Rspack.
+Nx-based monorepo with multiple projects. Each project has its own dedicated AGENTS.md file.
 
-## STRUCTURE
+## PROJECT STRUCTURE
 
 ```
 /
-├── apps/web/          # Main Angular application
-├── apps/web-e2e/      # Playwright E2E tests
+├── apps/web/          # Main application
+├── apps/web-e2e/      # E2E tests
 └── dist/              # Build output
 ```
 
-## WHERE TO LOOK
+## PROJECT DOCUMENTATION
 
-| Task         | Location                  | Notes                   |
-| ------------ | ------------------------- | ----------------------- |
-| Main app     | apps/web/src/             | Angular with SSR        |
-| E2E tests    | apps/web-e2e/             | Playwright tests        |
-| Build config | apps/web/rspack.config.ts | Rspack build setup      |
-| Nx config    | nx.json                   | Workspace configuration |
+Each project contains its own AGENTS.md file:
 
-## CONVENTIONS
+| Project | File                     | Purpose                      |
+| ------- | ------------------------ | ---------------------------- |
+| web     | `apps/web/AGENTS.md`     | Main application development |
+| web-e2e | `apps/web-e2e/AGENTS.md` | End-to-end testing           |
 
-- Nx monorepo structure
-- Angular 21 with TypeScript
-- SSR via @angular/ssr
-- Rspack for builds (not Webpack)
-- Vitest for unit tests
-- Playwright for E2E
-- ESLint for linting
-- pnpm workspace
-
-## COMMANDS
+## WORKSPACE COMMANDS
 
 ```bash
-# Development
-npx nx serve web          # Dev server
-npx nx serve web --ssr     # SSR dev server
-
-# Building
-npx nx build web          # Production build
-npx nx serve-static web   # Serve built app
-
-# Testing
-npx nx test web            # Unit tests
-npx nx e2e web-e2e         # E2E tests
-
-# Utilities
+# Project Management
 npx nx graph               # Project dependency graph
-npx nx show project web    # Project details
+npx nx show project <name>  # Project details
+npx nx list                # List all projects
 ```
 
-## NOTES
+## WORKSPACE FILES
 
-- Single app workspace (web)
-- Large file: nx-welcome.ts (951 lines - generated template)
-- Uses pnpm for package management
-- ESLint config present
+| File                | Purpose                    |
+| ------------------- | -------------------------- |
+| nx.json             | Nx workspace configuration |
+| package.json        | Root dependencies          |
+| pnpm-workspace.yaml | Package manager workspace  |
 
 ## UPDATE POLICY
 
 **Language Requirement:** All content in AGENTS.md must be in English.
 
-When significant changes are made to the project (new libraries, architecture changes, modified patterns, etc.), **always ask the user before updating AGENTS.md** with a specific suggestion.
+### When to Update This File
 
-Example: _"I've detected you added React Query. Would you like me to update AGENTS.md to include state management conventions with this pattern?"_
+- Adding new projects
+- Changing workspace-level configuration
+- Modifying monorepo patterns
+
+### Project-Specific Updates
+
+Refer to individual project AGENTS.md files for project-specific update policies.
+
+**Always ask before updating any AGENTS.md file** with specific suggestions.
