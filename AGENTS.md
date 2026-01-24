@@ -10,6 +10,7 @@ Nx-based monorepo with multiple projects. Each project has its own dedicated AGE
 /
 ├── apps/web/          # Main application
 ├── apps/web-e2e/      # E2E tests
+├── @ecommerce/ui/     # UI component library
 └── dist/              # Build output
 ```
 
@@ -17,10 +18,11 @@ Nx-based monorepo with multiple projects. Each project has its own dedicated AGE
 
 Each project contains its own AGENTS.md file:
 
-| Project | File                     | Purpose                      |
-| ------- | ------------------------ | ---------------------------- |
-| web     | `apps/web/AGENTS.md`     | Main application development |
-| web-e2e | `apps/web-e2e/AGENTS.md` | End-to-end testing           |
+| Project | File                      | Purpose                          |
+| ------- | ------------------------- | -------------------------------- |
+| web     | `apps/web/AGENTS.md`      | Main application development     |
+| web-e2e | `apps/web-e2e/AGENTS.md`  | End-to-end testing               |
+| ui      | `@ecommerce/ui/AGENTS.md` | UI component library development |
 
 ## WORKSPACE COMMANDS
 
