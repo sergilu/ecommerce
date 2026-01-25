@@ -1,7 +1,7 @@
 {
   "name": "@ecommerce/ui",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "@ecommerce/ui/src",
+  "sourceRoot": "libs/ui/src",
   "prefix": "lib",
   "projectType": "library",
   "tags": ["ui"],
@@ -13,7 +13,7 @@
       "executor": "@storybook/angular:start-storybook",
       "options": {
         "port": 4400,
-        "configDir": "@ecommerce/ui/.storybook",
+        "configDir": "libs/ui/.storybook",
         "browserTarget": "@ecommerce/ui:build-storybook",
         "compodoc": false
       },
@@ -28,7 +28,7 @@
       "outputs": ["{options.outputDir}"],
       "options": {
         "outputDir": "dist/storybook/@ecommerce/ui",
-        "configDir": "@ecommerce/ui/.storybook",
+        "configDir": "libs/ui/.storybook",
         "browserTarget": "@ecommerce/ui:build-storybook",
         "compodoc": false
       },
@@ -41,7 +41,7 @@
     "test-storybook": {
       "executor": "nx:run-commands",
       "options": {
-        "command": "test-storybook -c @ecommerce/ui/.storybook --url=http://localhost:4400"
+        "command": "test-storybook -c libs/ui/.storybook --url=http://localhost:4400"
       }
     },
     "static-storybook": {

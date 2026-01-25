@@ -7,7 +7,7 @@ Angular 21 UI component library with Storybook integration for developing, docum
 ## STRUCTURE
 
 ```
-@ecommerce/ui/
+libs/@ecommerce/ui/
 ├── src/
 │   ├── lib/
 │   │   └── ui/
@@ -32,13 +32,13 @@ Angular 21 UI component library with Storybook integration for developing, docum
 
 | Task             | Location                               | Notes                             |
 | ---------------- | -------------------------------------- | --------------------------------- |
-| Components       | @ecommerce/ui/src/lib/ui/              | Angular UI components             |
-| Stories          | @ecommerce/ui/src/lib/ui/\*.stories.ts | Storybook documentation           |
-| Tests            | @ecommerce/ui/src/lib/ui/\*.spec.ts    | Unit tests                        |
-| Exports          | @ecommerce/ui/src/index.ts             | Public API surface                |
-| Storybook Config | @ecommerce/ui/.storybook/              | Storybook setup and configuration |
-| Build Config     | @ecommerce/ui/vite.config.mts          | Vite build configuration          |
-| Nx Config        | @ecommerce/ui/project.json             | Nx project metadata and targets   |
+| Components       | libs/@ecommerce/ui/src/lib/ui/              | Angular UI components             |
+| Stories          | libs/@ecommerce/ui/src/lib/ui/\*.stories.ts | Storybook documentation           |
+| Tests            | libs/@ecommerce/ui/src/lib/ui/\*.spec.ts    | Unit tests                        |
+| Exports          | libs/@ecommerce/ui/src/index.ts             | Public API surface                |
+| Storybook Config | libs/@ecommerce/ui/.storybook/              | Storybook setup and configuration |
+| Build Config     | libs/@ecommerce/ui/vite.config.mts          | Vite build configuration          |
+| Nx Config        | libs/@ecommerce/ui/project.json             | Nx project metadata and targets   |
 
 ## CONVENTIONS
 
