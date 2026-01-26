@@ -2,7 +2,7 @@
 
 A comprehensive learning environment for practicing and testing enterprise application development concepts.
 
-## 🎯 Learning Objectives
+## Learning Objectives
 
 This project demonstrates and allows hands-on practice with key enterprise patterns:
 
@@ -14,7 +14,7 @@ This project demonstrates and allows hands-on practice with key enterprise patte
 - **Server-Side Rendering**: Angular SSR implementation
 - **Component-First Architecture**: Standalone components and shared libraries
 
-## 🛠 Technology Stack
+## Technology Stack
 
 - **Framework**: Angular 21 with TypeScript
 - **Workspace**: Nx monorepo with intelligent caching
@@ -25,7 +25,7 @@ This project demonstrates and allows hands-on practice with key enterprise patte
 - **Styling**: SCSS with Tailwind CSS
 - **Package Manager**: pnpm workspace
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 /
@@ -35,7 +35,7 @@ This project demonstrates and allows hands-on practice with key enterprise patte
 └── dist/              # Build outputs
 ```
 
-## 🚀 Quick Start
+## Quick Start
 
 ```bash
 # Install dependencies
@@ -55,7 +55,7 @@ npx nx build web               # Production build
 npx nx build-storybook ui      # Static Storybook
 ```
 
-## 💡 Usage
+## Usage
 
 This is **not** a production e-commerce application. It's a controlled environment for:
 
