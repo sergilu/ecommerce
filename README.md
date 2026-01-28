@@ -1,3 +1,5 @@
+🚧 UNDER CONSTRUCTION 🚧
+
 # Enterprise Application Patterns Learning Playground
 
 A comprehensive learning environment for practicing and testing enterprise application development concepts.
