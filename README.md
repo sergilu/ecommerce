@@ -10,3 +10,4 @@ A comprehensive learning environment for practicing and testing enterprise appli
 - [x] **Hexagonal architecture**
 - [x] **Unit Testing**: Testing Library integration with Vitest
 - [ ] **End-to-End Testing**: Playwright automation and testing
+- [ ] **Design System**: Storybook
