@@ -8,5 +8,5 @@ A comprehensive learning environment for practicing and testing enterprise appli
 
 - [x] **Server-Side Rendering**: Angular SSR implementation
 - [x] **Hexagonal architecture**
-- [ ] **Unit Testing**: Testing Library integration with Vitest
+- [x] **Unit Testing**: Testing Library integration with Vitest
 - [ ] **End-to-End Testing**: Playwright automation and testing
