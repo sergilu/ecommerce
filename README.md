@@ -6,9 +6,15 @@ A comprehensive learning environment for practicing and testing enterprise appli
 
 # Roadmap
 
-- [x] **Hexagonal architecture**
+## Testing
+
 - [x] **Unit Testing**: Testing Library integration with Vitest
 - [ ] **End-to-End Testing**: Playwright automation and testing
+
+## Architecture
+
+- [x] **Hexagonal architecture**
+- [ ] **Smart & Dumb Components**
 - [ ] **Design System**: Storybook
 
 ## Angular
