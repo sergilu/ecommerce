@@ -6,7 +6,8 @@ A comprehensive learning environment for practicing and testing enterprise appli
 
 # Roadmap
 
-🧪 Experimental
+🧪 Experimental:
+👁️‍🗨️ Preview
 
 ## Testing
 
@@ -28,3 +29,4 @@ A comprehensive learning environment for practicing and testing enterprise appli
 - [ ] **ChangeDetectionStrategy.OnPush** to avoid unnecessary re-renders
 - [ ] **@defer** reduce the initial bundle size
 - [ ] 🧪 **Signal Forms**
+- [ ] 👁️‍🗨️ **Angular Aria** Accessible Components
