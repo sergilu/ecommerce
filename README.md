@@ -25,4 +25,4 @@ A comprehensive learning environment for practicing and testing enterprise appli
 - [x] **resource() API**
 - [ ] **ChangeDetectionStrategy.OnPush** to avoid unnecessary re-renders
 - [ ] **@defer** reduce the initial bundle size
-- [ ] \*\*
+- [ ] **Signal Forms**
