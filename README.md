@@ -30,3 +30,7 @@ A comprehensive learning environment for practicing and testing enterprise appli
 - [ ] **@defer** reduce the initial bundle size
 - [ ] 🧪 **Signal Forms**
 - [ ] 👁️‍🗨️ **Angular Aria** Accessible Components
+
+## Features
+
+- [ ] **Add to cart** Button with counter
