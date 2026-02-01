@@ -1,0 +1,15 @@
+:host.counter {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    border: 1px solid var(--ec-counter-color-border);
+    border-radius: var(--ec-counter-border-radius);
+    padding: 4px;
+}
+
+.counter__count {
+    font-feature-settings: "tnum";
+    font-variant-numeric: tabular-nums;
+    min-width: calc(var(--max-displayed-digits) * 1ch);
+    text-align: center;
+}

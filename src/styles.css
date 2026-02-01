@@ -1,3 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
 
-@import "tailwindcss";
+@import 'tailwindcss';
+@import './app/shared/styles/theme.scss';
+
+@font-face {
+  font-family: 'Noto Sans';
+  src: url('/assets/fonts/Noto-Sans-regular.woff2') format('woff2');
+  font-display: swap;
+}
+
+body {
+  font-family: var(--ec-font-family);
+}

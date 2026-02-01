@@ -17,8 +17,8 @@ A comprehensive learning environment for practicing and testing enterprise appli
 ## Architecture
 
 - [x] **Hexagonal architecture**
-- [ ] **Smart & Dumb Components**
-- [ ] **Design System**: Storybook
+- [x] **Smart & Dumb Components**
+- [x] **Design System**: Storybook
 
 ## Angular
 
@@ -33,4 +33,9 @@ A comprehensive learning environment for practicing and testing enterprise appli
 
 ## Features
 
+- [ ] **Design** Inspired by the Ikea Web
 - [ ] **Add to cart** Button with counter
+
+## Optimizations
+
+- [ ] **Optimized fonts**: WOFF2 fonts

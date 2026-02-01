@@ -74,6 +74,30 @@
           "options": {
             "runnerConfig": "vitest.config.ts"
           }
+        },
+        "storybook": {
+          "builder": "@storybook/angular:start-storybook",
+          "options": {
+            "configDir": ".storybook",
+            "browserTarget": "ecommerce:build",
+            "compodoc": false,
+            "port": 6006,
+            "styles": [
+              "src/styles.css"
+            ]
+          }
+        },
+        "build-storybook": {
+          "builder": "@storybook/angular:build-storybook",
+          "options": {
+            "configDir": ".storybook",
+            "browserTarget": "ecommerce:build",
+            "compodoc": false,
+            "outputDir": "storybook-static",
+            "styles": [
+              "src/styles.css"
+            ]
+          }
         }
       }
     }

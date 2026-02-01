@@ -7,7 +7,9 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "serve:ssr:ecommerce": "node dist/ecommerce/server/server.mjs"
+    "serve:ssr:ecommerce": "node dist/ecommerce/server/server.mjs",
+    "storybook": "ng run ecommerce:storybook",
+    "build-storybook": "ng run ecommerce:build-storybook"
   },
   "prettier": {
     "printWidth": 100,
@@ -31,14 +33,23 @@
     "@angular/platform-server": "21.1.0",
     "@angular/router": "21.1.0",
     "@angular/ssr": "21.1.2",
+    "@ng-icons/core": "33.0.0",
+    "@ng-icons/tabler-icons": "33.0.0",
     "express": "5.1.0",
     "rxjs": "7.8.0",
     "tslib": "2.3.0"
   },
   "devDependencies": {
+    "@angular-devkit/architect": "0.2101.0",
+    "@angular-devkit/build-angular": "21.1.0",
+    "@angular-devkit/core": "21.1.0",
     "@angular/build": "21.1.2",
     "@angular/cli": "21.1.2",
     "@angular/compiler-cli": "21.1.0",
+    "@angular/platform-browser-dynamic": "21.1.0",
+    "@storybook/addon-a11y": "^10.2.3",
+    "@storybook/addon-docs": "^10.2.3",
+    "@storybook/angular": "^10.2.3",
     "@tailwindcss/postcss": "4.1.12",
     "@testing-library/angular": "19.0.0",
     "@testing-library/dom": "^10.4.1",
@@ -48,6 +59,7 @@
     "@types/node": "24.1.0",
     "jsdom": "27.1.0",
     "postcss": "8.5.3",
+    "storybook": "^10.2.3",
     "tailwindcss": "4.1.12",
     "typescript": "5.9.2",
     "vitest": "4.0.8"

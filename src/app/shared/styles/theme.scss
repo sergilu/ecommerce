@@ -1,0 +1,42 @@
+:root {
+    /* Colors */
+    --ec-color-dark: #101010;
+    --ec-color-primary: #1e90ff;
+
+
+    /* Spacing */
+    --ec-spacing-1: 2px;
+    --ec-spacing-2: 4px;
+    --ec-spacing-3: 8px;
+    --ec-spacing-4: 12px;
+    --ec-spacing-5: 16px;
+    --ec-spacing-6: 24px;
+    --ec-spacing-7: 32px;
+    --ec-spacing-8: 48px;
+    --ec-spacing-9: 64px;
+
+
+    /* Fonts */
+    --ec-font-family: 'Noto Sans', 'Roboto', 'Open Sans', system-ui, sans-serif;
+
+    /* Components */
+
+    /* Button */
+    --ec-button-font-family: var(--ec-font-family);
+    --ec-button-min-height: 32px;
+    --ec-button-min-width: 32px;
+
+    --ec-button-color-background-ghost: transparent;
+    --ec-button-color-background-ghost-hover: oklab(90.365% 0 -0.0001);
+    --ec-button-color-background-ghost-disabled: transparent;
+
+    --ec-button-color-foreground-ghost: var(--ec-color-dark);
+    --ec-button-color-foreground-ghost-hover: var(--ec-color-dark);
+    --ec-button-color-foreground-ghost-disabled: oklab(84.521% 0 -0.0001);
+
+    /* Counter */
+    --ec-counter-color-border: var(--ec-color-dark);
+    --ec-counter-border-radius: 100vmax;
+    
+    
+}

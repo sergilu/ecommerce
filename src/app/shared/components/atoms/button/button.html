@@ -1,0 +1,9 @@
+<button 
+    class="button" 
+    [disabled]="disabled()"
+    [class.button--ghost]="style() === 'ghost'"
+    [class.button--icon]="isIcon()"
+    (click)="onClick.emit()"
+>
+    <ng-content>{{ label() }}</ng-content>
+</button>

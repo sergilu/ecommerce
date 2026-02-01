@@ -1,0 +1,26 @@
+<app-button
+    class="counter__button"
+    aria-label="Disminuir cantidad"
+    [isIcon]="true"
+    [disabled]="!canDecrement()"
+    (onClick)="handleDecrement()"
+    
+>
+    <ng-icon [svg]="Icons.minus"></ng-icon>
+</app-button>
+<span
+    class="counter__count"
+    aria-label="Valor de entrada de la cantidad"
+>
+    {{ count() }}
+</span>
+<app-button
+    class="counter__button"
+    aria-label="Aumentar valor"
+    [isIcon]="true"
+    [disabled]="!canIncrement()"
+    (onClick)="handleIncrement()"
+    
+>
+    <ng-icon [svg]="Icons.plus"></ng-icon>
+</app-button>
