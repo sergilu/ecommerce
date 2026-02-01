@@ -1,0 +1,12 @@
+  <app-counter
+        [min]="min"
+        [max]="stock()"
+        [step]="step"
+        [formControl]="addToCartForm.controls.quantity"
+   ></app-counter>
+   <button
+    [disabled]="!addToCartForm.valid"
+    (click)="handleAddToCart()"
+   >
+    Add to Cart
+   </button>

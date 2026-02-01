@@ -20,7 +20,8 @@ describe('Product Detail Page', () => {
       id: productId,
       name: 'Test Product',
       description: 'A test product description',
-      price: 99.99,
+      price: { amount: 49.99, currency: 'USD' },
+      stock: 20,
     };
 
     mockRepository.shouldFind(mockProduct);

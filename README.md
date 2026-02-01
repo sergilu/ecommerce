@@ -4,6 +4,8 @@
 
 A comprehensive learning environment for practicing and testing enterprise application development concepts.
 
+> ⚠️ **Overengineering intentional**: This project serves as a learning playground to practice and apply new development concepts.
+
 # Roadmap
 
 🧪 Experimental:
@@ -26,10 +28,12 @@ A comprehensive learning environment for practicing and testing enterprise appli
 - [x] **Standalone components** by default since Angular 19
 - [x] **Zoneless** by defeault sinze Angular 21
 - [x] 🧪 **resource() API**
-- [ ] **ChangeDetectionStrategy.OnPush** to avoid unnecessary re-renders
-- [ ] **@defer** reduce the initial bundle size
+- [x] **Control Value Accessor**
+- [x] **ChangeDetectionStrategy.OnPush** to avoid unnecessary re-renders
+- [x] **@defer** reduce the initial bundle size
 - [ ] 🧪 **Signal Forms**
 - [ ] 👁️‍🗨️ **Angular Aria** Accessible Components
+- [ ] **i18n** ngx-translate
 
 ## Features
 

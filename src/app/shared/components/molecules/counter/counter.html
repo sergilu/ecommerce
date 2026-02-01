@@ -10,9 +10,10 @@
 </app-button>
 <span
     class="counter__count"
+    [class.counter__count--disabled]="disabled()"
     aria-label="Valor de entrada de la cantidad"
 >
-    {{ count() }}
+    {{ value() }}
 </span>
 <app-button
     class="counter__button"

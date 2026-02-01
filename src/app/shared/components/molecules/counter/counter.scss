@@ -13,3 +13,7 @@
     min-width: calc(var(--max-displayed-digits) * 1ch);
     text-align: center;
 }
+
+.counter__count--disabled {
+    opacity: 0.5;
+}
