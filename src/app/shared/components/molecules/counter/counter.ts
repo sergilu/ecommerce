@@ -5,9 +5,7 @@ import {
   computed,
   forwardRef,
   input,
-  linkedSignal,
   model,
-  signal,
 } from '@angular/core';
 import { ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';
 import { NgIcon } from '@ng-icons/core';
@@ -43,19 +41,19 @@ export class Counter implements ControlValueAccessor {
   readonly max = input<number | null>(DEFAULT_MAX);
 
   readonly value = model<number>(DEFAULT_INITIAL_COUNT);
-  readonly disabled = model<boolean>(false);
+  readonly isDisabled = model<boolean>(false);
 
   protected readonly maxDisplayedDigits = DEFAULT_MAX_DISPLAYED_DIGITS;
 
   protected readonly canDecrement = computed(() => {
-    if (this.disabled()) {
+    if (this.isDisabled()) {
       return false;
     }
     const min = this.min();
     return min !== null ? this.value() - this.step() >= min : true;
   });
   protected readonly canIncrement = computed(() => {
-    if (this.disabled()) {
+    if (this.isDisabled()) {
       return false;
     }
     const max = this.max();
@@ -80,7 +78,7 @@ export class Counter implements ControlValueAccessor {
     this.#onTouched = fn;
   }
   setDisabledState?(isDisabled: boolean): void {
-    this.disabled.set(isDisabled);
+    this.isDisabled.set(isDisabled);
   }
 
   protected handleIncrement() {

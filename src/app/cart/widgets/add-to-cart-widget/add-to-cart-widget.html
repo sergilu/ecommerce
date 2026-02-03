@@ -4,9 +4,9 @@
         [step]="step"
         [formControl]="addToCartForm.controls.quantity"
    ></app-counter>
-   <button
-    [disabled]="!addToCartForm.valid"
+   <app-button
+    [isDisabled]="!addToCartForm.valid"
     (click)="handleAddToCart()"
    >
     Add to Cart
-   </button>
+   </app-button>

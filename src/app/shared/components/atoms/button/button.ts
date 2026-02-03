@@ -10,9 +10,9 @@ export type ButtonStyle = 'default' | 'ghost';
 })
 export class Button {
   readonly label = input<string>();
-  readonly disabled = input<boolean>(false);
-  readonly style = input<ButtonStyle>('default');
+  readonly variant = input<ButtonStyle>('default');
   readonly isIcon = input<boolean>(false);
+  readonly isDisabled = input<boolean>(false);
   readonly isLoading = input<boolean>(false);
 
   onClick = output<void>();

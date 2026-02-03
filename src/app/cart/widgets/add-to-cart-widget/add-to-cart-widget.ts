@@ -1,5 +1,6 @@
 import { Counter } from '@/app/shared/components/molecules/counter/counter';
-import { ChangeDetectionStrategy, Component, input, OnInit } from '@angular/core';
+import { Button } from '@/app/shared/components/atoms/button/button';
+import { ChangeDetectionStrategy, Component, input } from '@angular/core';
 import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 
 interface AddToCartForm {
@@ -9,7 +10,7 @@ interface AddToCartForm {
 @Component({
   selector: 'app-add-to-cart-widget',
   templateUrl: './add-to-cart-widget.html',
-  imports: [Counter, ReactiveFormsModule],
+  imports: [Counter, Button, ReactiveFormsModule],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class AddToCartWidget {

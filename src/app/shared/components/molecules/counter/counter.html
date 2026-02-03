@@ -1,8 +1,9 @@
 <app-button
     class="counter__button"
     aria-label="Disminuir cantidad"
+    variant="ghost"
     [isIcon]="true"
-    [disabled]="!canDecrement()"
+    [isDisabled]="!canDecrement()"
     (onClick)="handleDecrement()"
     
 >
@@ -10,7 +11,7 @@
 </app-button>
 <span
     class="counter__count"
-    [class.counter__count--disabled]="disabled()"
+    [class.counter__count--disabled]="isDisabled()"
     aria-label="Valor de entrada de la cantidad"
 >
     {{ value() }}
@@ -18,8 +19,9 @@
 <app-button
     class="counter__button"
     aria-label="Aumentar valor"
+    variant="ghost"
     [isIcon]="true"
-    [disabled]="!canIncrement()"
+    [isDisabled]="!canIncrement()"
     (onClick)="handleIncrement()"
     
 >

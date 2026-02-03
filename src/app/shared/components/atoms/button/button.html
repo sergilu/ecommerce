@@ -1,11 +1,11 @@
 <button
     class="button"
-    [disabled]="disabled() || isLoading()"
-    [class.button--default]="style() === 'default'"
-    [class.button--ghost]="style() === 'ghost'"
+    [disabled]="isDisabled() || isLoading()"
+    [class.button--default]="variant() === 'default'"
+    [class.button--ghost]="variant() === 'ghost'"
     [class.button--icon]="isIcon()"
     [class.button--loading]="isLoading()"
-    [class.button--disabled]="disabled()"
+    [class.button--disabled]="isDisabled()"
     (click)="onClick.emit()"
 >
     <span class="button__content">

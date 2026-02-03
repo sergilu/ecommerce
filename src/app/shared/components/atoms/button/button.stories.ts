@@ -11,10 +11,10 @@ const meta: Meta<Button> = {
     label: {
       control: 'text',
     },
-    disabled: {
+    isDisabled: {
       control: 'boolean',
     },
-    style: {
+    variant: {
       control: 'select',
       options: ['default', 'ghost'] satisfies ButtonStyle[],
     },
@@ -34,8 +34,8 @@ type Story = StoryObj<Button>;
 export const Default: Story = {
   args: {
     label: 'Button',
-    style: 'default',
-    disabled: false,
+    variant: 'default',
+    isDisabled: false,
     isIcon: false,
   },
 };
@@ -43,9 +43,9 @@ export const Default: Story = {
 export const Loading: Story = {
   args: {
     label: 'Loading...',
-    style: 'default',
+    variant: 'default',
     isLoading: true,
-    disabled: false,
+    isDisabled: false,
     isIcon: false,
   },
 };

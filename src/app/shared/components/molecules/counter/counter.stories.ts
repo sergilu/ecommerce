@@ -10,7 +10,7 @@ const meta: Meta<Counter> = {
     step: { control: 'number' },
     min: { control: 'number' },
     max: { control: 'number' },
-    disabled: { control: 'boolean' },
+    isDisabled: { control: 'boolean' },
   },
 };
 
@@ -23,6 +23,6 @@ export const Default: Story = {
     step: 1,
     min: 0,
     max: null,
-    disabled: false,
+    isDisabled: false,
   },
 };
