@@ -1,6 +1,7 @@
-<button 
-    class="button" 
+<button
+    class="button"
     [disabled]="disabled()"
+    [class.button--default]="style() === 'default'"
     [class.button--ghost]="style() === 'ghost'"
     [class.button--icon]="isIcon()"
     (click)="onClick.emit()"

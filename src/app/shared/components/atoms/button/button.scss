@@ -1,4 +1,7 @@
 .button {
+    cursor: pointer;
+    border: none;
+
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -7,6 +10,25 @@
     min-width: var(--ec-button-min-width);
 
     font-family: var(--ec-button-font-family);
+    height: 32px;
+    
+}
+
+.button--default {
+    background-color: var(--ec-button-color-background-default);
+    color: var(--ec-button-color-foreground-default);
+    border-radius: 99999px;
+    padding-inline: var(--ec-spacing-4);
+
+    &:hover:not(:disabled) {
+        background-color: var(--ec-button-color-background-default-hover);
+        color: var(--ec-button-color-foreground-default-hover);
+    }
+
+    &:disabled {
+        background-color: var(--ec-button-color-background-default-disabled);
+        color: var(--ec-button-color-foreground-default-disabled);
+    }
 }
 
 .button--ghost {

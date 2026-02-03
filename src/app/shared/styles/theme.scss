@@ -1,7 +1,8 @@
 :root {
     /* Colors */
     --ec-color-dark: #101010;
-    --ec-color-primary: #1e90ff;
+    --ec-color-primary: oklab(45.995000000000005% -0.04179 -0.13411);
+    --ec-color-primary-dark: oklab(42.691% -0.0389 -0.124);
 
 
     /* Spacing */
@@ -25,6 +26,14 @@
     --ec-button-font-family: var(--ec-font-family);
     --ec-button-min-height: 32px;
     --ec-button-min-width: 32px;
+
+    --ec-button-color-background-default: var(--ec-color-primary);
+    --ec-button-color-background-default-hover: var(--ec-color-primary-dark);
+    --ec-button-color-background-default-disabled: oklab(84.521% 0 -0.0001);
+
+    --ec-button-color-foreground-default: #ffffff;
+    --ec-button-color-foreground-default-hover: #ffffff;
+    --ec-button-color-foreground-default-disabled: #ffffff;
 
     --ec-button-color-background-ghost: transparent;
     --ec-button-color-background-ghost-hover: oklab(90.365% 0 -0.0001);
