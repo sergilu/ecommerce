@@ -1,10 +1,15 @@
 <button
     class="button"
-    [disabled]="disabled()"
+    [disabled]="disabled() || isLoading()"
     [class.button--default]="style() === 'default'"
     [class.button--ghost]="style() === 'ghost'"
     [class.button--icon]="isIcon()"
+    [class.button--loading]="isLoading()"
+    [class.button--disabled]="disabled()"
     (click)="onClick.emit()"
 >
-    <ng-content>{{ label() }}</ng-content>
+    <span class="button__content">
+        <ng-content>{{ label() }}</ng-content>
+    </span>
+    <span class="button__spinner" [class.button__spinner--visible]="isLoading()"></span>
 </button>

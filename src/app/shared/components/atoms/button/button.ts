@@ -13,6 +13,7 @@ export class Button {
   readonly disabled = input<boolean>(false);
   readonly style = input<ButtonStyle>('default');
   readonly isIcon = input<boolean>(false);
+  readonly isLoading = input<boolean>(false);
 
   onClick = output<void>();
 }

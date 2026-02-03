@@ -21,6 +21,9 @@ const meta: Meta<Button> = {
     isIcon: {
       control: 'boolean',
     },
+    isLoading: {
+      control: 'boolean',
+    },
   },
   args: { onClick: fn() },
 };
@@ -32,6 +35,16 @@ export const Default: Story = {
   args: {
     label: 'Button',
     style: 'default',
+    disabled: false,
+    isIcon: false,
+  },
+};
+
+export const Loading: Story = {
+  args: {
+    label: 'Loading...',
+    style: 'default',
+    isLoading: true,
     disabled: false,
     isIcon: false,
   },

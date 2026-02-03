@@ -26,6 +26,7 @@
     --ec-button-font-family: var(--ec-font-family);
     --ec-button-min-height: 32px;
     --ec-button-min-width: 32px;
+    --ec-button-loading-spinner: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none'%3E%3Ccircle cx='12' cy='12' r='10' stroke='currentColor' stroke-width='3' stroke-linecap='round' stroke-dasharray='31.42 31.42' transform='rotate(-90 12 12)'/%3E%3C/svg%3E");
 
     --ec-button-color-background-default: var(--ec-color-primary);
     --ec-button-color-background-default-hover: var(--ec-color-primary-dark);
