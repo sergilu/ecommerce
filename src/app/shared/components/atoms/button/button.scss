@@ -65,10 +65,9 @@
     position: absolute;
     inset: 0;
     margin: auto;
-    display: inline-block;
     width: 16px;
     height: 16px;
-    background-color: currentColor;
+    background: currentColor;
     mask-image: var(--ec-button-loading-spinner);
     mask-size: contain;
     mask-repeat: no-repeat;
@@ -76,7 +75,6 @@
     animation: button-spinner-rotate 1s linear infinite;
     opacity: 0;
     transition: opacity 0.2s ease;
-    pointer-events: none;
 }
 
 .button__spinner--visible {
